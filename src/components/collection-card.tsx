@@ -1,6 +1,6 @@
 "use client"
 
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion, Variants } from "framer-motion"
 import Image from "next/image" 
 import { useEffect, useState } from "react"
 
@@ -11,7 +11,7 @@ type Collection = {
   images: string[]
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
