@@ -43,6 +43,15 @@ body {
   padding-right: env(safe-area-inset-right);
 }
 
+/* Hide scrollbar utility */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 /* Ensure full viewport coverage on mobile devices */
 @supports (-webkit-touch-callout: none) {
   body {
